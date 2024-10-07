@@ -33,7 +33,7 @@
 <div class="d-flex align-items-center justify-content-center" style="height: 90vh;">
     <div class="card p-4" style="width: 30rem;">
         <h3 class="text-center mb-4">LogIn Form</h3>
-        <form action="#" method="POST">
+        <form action="{{route('login')}}" method="POST">
             @csrf
             <div class="mb-3">
                

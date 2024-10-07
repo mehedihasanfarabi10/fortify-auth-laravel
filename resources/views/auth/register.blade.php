@@ -33,7 +33,7 @@
 <div class="d-flex align-items-center justify-content-center" style="height: 90vh;">
     <div class="card p-4" style="width: 30rem;">
         <h3 class="text-center mb-4">LogIn Form</h3>
-        <form action="#" method="POST">
+        <form action="{{route('register')}}" method="POST">
             @csrf
             <div class="mb-3">
                 <label for="Name" class="form-label">Enter your name</label>
@@ -49,7 +49,7 @@
             </div>
             <div class="mb-3">
                 <label for="PasswordConfirm" class="form-label">Confirm password</label>
-                <input type="password" class="form-control" name="password_confirm" required>
+                <input type="password" class="form-control" name="password_confirmation" required>
             </div>
             <button type="submit" class="btn btn-primary w-100">Submit</button>
         </form>
